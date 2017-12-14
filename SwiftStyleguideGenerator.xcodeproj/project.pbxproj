@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8265EEB51FE2E2EC00FF18A9 /* Radiuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8265EEB41FE2E2EC00FF18A9 /* Radiuses.swift */; };
+		8265EEBF1FE2F6A700FF18A9 /* Radiuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8265EEBC1FE2F6A700FF18A9 /* Radiuses.swift */; };
+		8265EEC01FE2F6A700FF18A9 /* FontSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8265EEBD1FE2F6A700FF18A9 /* FontSizes.swift */; };
+		8265EEC11FE2F6A700FF18A9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8265EEBE1FE2F6A700FF18A9 /* Colors.swift */; };
 		82EE46991FE2BA47006470F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46981FE2BA47006470F7 /* main.swift */; };
 		82EE46C11FE2C375006470F7 /* TaskPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46A51FE2C373006470F7 /* TaskPipe.swift */; };
 		82EE46C21FE2C375006470F7 /* ProcessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46A61FE2C373006470F7 /* ProcessInfo.swift */; };
@@ -37,7 +39,6 @@
 		82EE46DA1FE2C375006470F7 /* ChooseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46BE1FE2C374006470F7 /* ChooseSettings.swift */; };
 		82EE46DB1FE2C375006470F7 /* CommandExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46BF1FE2C374006470F7 /* CommandExecutor.swift */; };
 		82EE46DC1FE2C375006470F7 /* StringStyleColorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46C01FE2C374006470F7 /* StringStyleColorizer.swift */; };
-		82EE46DE1FE2C5C4006470F7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46DD1FE2C5C4006470F7 /* Colors.swift */; };
 		82EE46E01FE2C5E4006470F7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46DF1FE2C5E4006470F7 /* File.swift */; };
 		82EE46E21FE2C611006470F7 /* FileStyleguideVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46E11FE2C611006470F7 /* FileStyleguideVars.swift */; };
 		82EE46E41FE2CAB6006470F7 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46E31FE2CAB6006470F7 /* Help.swift */; };
@@ -56,7 +57,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8265EEB41FE2E2EC00FF18A9 /* Radiuses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radiuses.swift; sourceTree = "<group>"; };
+		8265EEBC1FE2F6A700FF18A9 /* Radiuses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Radiuses.swift; sourceTree = "<group>"; };
+		8265EEBD1FE2F6A700FF18A9 /* FontSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSizes.swift; sourceTree = "<group>"; };
+		8265EEBE1FE2F6A700FF18A9 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		82EE46951FE2BA47006470F7 /* SwiftStyleguideGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftStyleguideGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EE46981FE2BA47006470F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		82EE46A51FE2C373006470F7 /* TaskPipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskPipe.swift; path = Carthage/Checkouts/swiftline/Source/TaskPipe.swift; sourceTree = SOURCE_ROOT; };
@@ -87,7 +90,6 @@
 		82EE46BE1FE2C374006470F7 /* ChooseSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseSettings.swift; path = Carthage/Checkouts/swiftline/Source/ChooseSettings.swift; sourceTree = SOURCE_ROOT; };
 		82EE46BF1FE2C374006470F7 /* CommandExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommandExecutor.swift; path = Carthage/Checkouts/swiftline/Source/CommandExecutor.swift; sourceTree = SOURCE_ROOT; };
 		82EE46C01FE2C374006470F7 /* StringStyleColorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringStyleColorizer.swift; path = Carthage/Checkouts/swiftline/Source/StringStyleColorizer.swift; sourceTree = SOURCE_ROOT; };
-		82EE46DD1FE2C5C4006470F7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		82EE46DF1FE2C5E4006470F7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		82EE46E11FE2C611006470F7 /* FileStyleguideVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStyleguideVars.swift; sourceTree = "<group>"; };
 		82EE46E31FE2CAB6006470F7 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
@@ -104,6 +106,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8265EEBB1FE2F6A700FF18A9 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				8265EEBC1FE2F6A700FF18A9 /* Radiuses.swift */,
+				8265EEBD1FE2F6A700FF18A9 /* FontSizes.swift */,
+				8265EEBE1FE2F6A700FF18A9 /* Colors.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
 		82EE468C1FE2BA47006470F7 = {
 			isa = PBXGroup;
 			children = (
@@ -124,11 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				82EE46981FE2BA47006470F7 /* main.swift */,
-				82EE46E11FE2C611006470F7 /* FileStyleguideVars.swift */,
-				82EE46DD1FE2C5C4006470F7 /* Colors.swift */,
-				8265EEB41FE2E2EC00FF18A9 /* Radiuses.swift */,
 				82EE46DF1FE2C5E4006470F7 /* File.swift */,
+				82EE46E11FE2C611006470F7 /* FileStyleguideVars.swift */,
 				82EE46E31FE2CAB6006470F7 /* Help.swift */,
+				8265EEBB1FE2F6A700FF18A9 /* Types */,
 				82EE46A41FE2C365006470F7 /* Swiftline */,
 			);
 			path = SwiftStyleguideGenerator;
@@ -245,7 +256,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				82EE46C51FE2C375006470F7 /* PromptReader.swift in Sources */,
-				82EE46DE1FE2C5C4006470F7 /* Colors.swift in Sources */,
 				82EE46C71FE2C375006470F7 /* Runner.swift in Sources */,
 				82EE46CE1FE2C375006470F7 /* AgreeSettings.swift in Sources */,
 				82EE46D91FE2C375006470F7 /* StringForegroundColorizer.swift in Sources */,
@@ -263,6 +273,7 @@
 				82EE46D41FE2C375006470F7 /* ShortHandRunner.swift in Sources */,
 				82EE46C31FE2C375006470F7 /* AskSettings.swift in Sources */,
 				82EE46D51FE2C375006470F7 /* AskerValidator.swift in Sources */,
+				8265EEBF1FE2F6A700FF18A9 /* Radiuses.swift in Sources */,
 				82EE46C11FE2C375006470F7 /* TaskPipe.swift in Sources */,
 				82EE46C61FE2C375006470F7 /* StringBackgroundColorizer.swift in Sources */,
 				82EE46CC1FE2C375006470F7 /* Glob.swift in Sources */,
@@ -271,10 +282,11 @@
 				82EE46CB1FE2C375006470F7 /* RunResults.swift in Sources */,
 				82EE46CD1FE2C375006470F7 /* Args.swift in Sources */,
 				82EE46C81FE2C375006470F7 /* StringStyle.swift in Sources */,
-				8265EEB51FE2E2EC00FF18A9 /* Radiuses.swift in Sources */,
 				82EE46C41FE2C375006470F7 /* ArgConvertible.swift in Sources */,
 				82EE46C21FE2C375006470F7 /* ProcessInfo.swift in Sources */,
+				8265EEC01FE2F6A700FF18A9 /* FontSizes.swift in Sources */,
 				82EE46C91FE2C375006470F7 /* Argument.swift in Sources */,
+				8265EEC11FE2F6A700FF18A9 /* Colors.swift in Sources */,
 				82EE46D71FE2C375006470F7 /* Env.swift in Sources */,
 				82EE46991FE2BA47006470F7 /* main.swift in Sources */,
 				82EE46D21FE2C375006470F7 /* ArgsParser.swift in Sources */,

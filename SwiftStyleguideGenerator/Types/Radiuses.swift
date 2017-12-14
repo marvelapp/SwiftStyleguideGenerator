@@ -10,22 +10,26 @@ import Foundation
 
 class Radiuses {
     
+    let fileName = "Radius.swift"
+    
     func generate(json: [String: Any], destinationDirectory: String){
         
         guard let radii = json["radii"] as? [String: String] else {
-            print("❌ No colors found in JSON.".f.Red)
+            print("❌ No radiuses found in JSON.".f.Red)
             exit(1)
         }
         
         var fileString = "class Radius: NSObject {\n\n"
-
-        for (key, value) in radii {
-            fileString += "@objc static let \(key):CGFloat = \(value)\n"
+        var sizeName = 1
+        
+        for value in radii {
+            fileString += "@objc static let size\(sizeName):CGFloat = \(value)\n"
+            sizeName = sizeName + 1
         }
         
         fileString += "\n\n}"
         
-        File.write(string: fileString, filePath: "\(destinationDirectory)Colors.swift")
+        File.write(string: fileString, filePath: "\(destinationDirectory)\(fileName)")
         
     }
     

@@ -38,7 +38,9 @@ if destinationDirectory.last != "/" {
 print("🎨  Starting generating Styleguide files...".f.Green)
 
 let json = FileStyleguideVars.read(path: fileStyleguideVarsPath)
-Colors(platform: platform).generate(json: json, destinationDirectory: destinationDirectory)
+Colors().generate(json: json, destinationDirectory: destinationDirectory, platform: platform)
+Radiuses().generate(json: json, destinationDirectory: destinationDirectory)
+FontSizes().generate(json: json, destinationDirectory: destinationDirectory)
 
 print("✌️   Finished generating Styleguide files.".f.Green)
 

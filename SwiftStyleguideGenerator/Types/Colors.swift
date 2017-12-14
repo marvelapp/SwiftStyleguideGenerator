@@ -10,13 +10,9 @@ import Foundation
 
 class Colors {
     
-    var platform: Platform = .iOS
+    let fileName = "Colors.swift"
     
-    init(platform: Platform){
-        self.platform = platform
-    }
-    
-    func generate(json: [String: Any], destinationDirectory: String){
+    func generate(json: [String: Any], destinationDirectory: String, platform: Platform){
         
         guard let colors = json["colors"] as? [String: String] else {
             print("❌ No colors found in JSON.".f.Red)
@@ -43,7 +39,7 @@ class Colors {
         
         fileString += "\n\n}"
         
-        File.write(string: fileString, filePath: "\(destinationDirectory)Colors.swift")
+        File.write(string: fileString, filePath: "\(destinationDirectory)\(fileName)")
         
     }
     

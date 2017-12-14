@@ -11,9 +11,7 @@ import Foundation
 struct FileStyleguideVars {
     
     static func read(path: String) -> [String: Any]{
-        
-        let filePath = "../../../Modules/marveloucss/variables2.json"
-        
+                
         guard let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) else {
             print("❌ Couldn't get styleguide vars json.".f.Red)
             exit(1)
