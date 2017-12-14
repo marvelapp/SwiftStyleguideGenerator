@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82EE46991FE2BA47006470F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46981FE2BA47006470F7 /* main.swift */; };
+		82EE46C11FE2C375006470F7 /* TaskPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46A51FE2C373006470F7 /* TaskPipe.swift */; };
+		82EE46C21FE2C375006470F7 /* ProcessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46A61FE2C373006470F7 /* ProcessInfo.swift */; };
+		82EE46C31FE2C375006470F7 /* AskSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46A71FE2C373006470F7 /* AskSettings.swift */; };
+		82EE46C41FE2C375006470F7 /* ArgConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46A81FE2C373006470F7 /* ArgConvertible.swift */; };
+		82EE46C51FE2C375006470F7 /* PromptReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46A91FE2C373006470F7 /* PromptReader.swift */; };
+		82EE46C61FE2C375006470F7 /* StringBackgroundColorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46AA1FE2C373006470F7 /* StringBackgroundColorizer.swift */; };
+		82EE46C71FE2C375006470F7 /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46AB1FE2C373006470F7 /* Runner.swift */; };
+		82EE46C81FE2C375006470F7 /* StringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46AC1FE2C373006470F7 /* StringStyle.swift */; };
+		82EE46C91FE2C375006470F7 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46AD1FE2C373006470F7 /* Argument.swift */; };
+		82EE46CA1FE2C375006470F7 /* Choose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46AE1FE2C373006470F7 /* Choose.swift */; };
+		82EE46CB1FE2C375006470F7 /* RunResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46AF1FE2C373006470F7 /* RunResults.swift */; };
+		82EE46CC1FE2C375006470F7 /* Glob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46B01FE2C373006470F7 /* Glob.swift */; };
+		82EE46CD1FE2C375006470F7 /* Args.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46B11FE2C373006470F7 /* Args.swift */; };
+		82EE46CE1FE2C375006470F7 /* AgreeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46B21FE2C373006470F7 /* AgreeSettings.swift */; };
+		82EE46CF1FE2C375006470F7 /* Ask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46B31FE2C373006470F7 /* Ask.swift */; };
+		82EE46D01FE2C375006470F7 /* PromptPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46B41FE2C373006470F7 /* PromptPrinter.swift */; };
+		82EE46D11FE2C375006470F7 /* Colorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46B51FE2C374006470F7 /* Colorizer.swift */; };
+		82EE46D21FE2C375006470F7 /* ArgsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46B61FE2C374006470F7 /* ArgsParser.swift */; };
+		82EE46D31FE2C375006470F7 /* RunnerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46B71FE2C374006470F7 /* RunnerSettings.swift */; };
+		82EE46D41FE2C375006470F7 /* ShortHandRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46B81FE2C374006470F7 /* ShortHandRunner.swift */; };
+		82EE46D51FE2C375006470F7 /* AskerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46B91FE2C374006470F7 /* AskerValidator.swift */; };
+		82EE46D61FE2C375006470F7 /* Agree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46BA1FE2C374006470F7 /* Agree.swift */; };
+		82EE46D71FE2C375006470F7 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46BB1FE2C374006470F7 /* Env.swift */; };
+		82EE46D81FE2C375006470F7 /* PromptSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46BC1FE2C374006470F7 /* PromptSettings.swift */; };
+		82EE46D91FE2C375006470F7 /* StringForegroundColorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46BD1FE2C374006470F7 /* StringForegroundColorizer.swift */; };
+		82EE46DA1FE2C375006470F7 /* ChooseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46BE1FE2C374006470F7 /* ChooseSettings.swift */; };
+		82EE46DB1FE2C375006470F7 /* CommandExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46BF1FE2C374006470F7 /* CommandExecutor.swift */; };
+		82EE46DC1FE2C375006470F7 /* StringStyleColorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46C01FE2C374006470F7 /* StringStyleColorizer.swift */; };
+		82EE46DE1FE2C5C4006470F7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46DD1FE2C5C4006470F7 /* Colors.swift */; };
+		82EE46E01FE2C5E4006470F7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46DF1FE2C5E4006470F7 /* File.swift */; };
+		82EE46E21FE2C611006470F7 /* FileStyleguideVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46E11FE2C611006470F7 /* FileStyleguideVars.swift */; };
+		82EE46E41FE2CAB6006470F7 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46E31FE2CAB6006470F7 /* Help.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		82EE46931FE2BA47006470F7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		82EE46951FE2BA47006470F7 /* SwiftStyleguideGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftStyleguideGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EE46981FE2BA47006470F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		82EE46A51FE2C373006470F7 /* TaskPipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskPipe.swift; path = Carthage/Checkouts/swiftline/Source/TaskPipe.swift; sourceTree = SOURCE_ROOT; };
+		82EE46A61FE2C373006470F7 /* ProcessInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProcessInfo.swift; path = Carthage/Checkouts/swiftline/Source/ProcessInfo.swift; sourceTree = SOURCE_ROOT; };
+		82EE46A71FE2C373006470F7 /* AskSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AskSettings.swift; path = Carthage/Checkouts/swiftline/Source/AskSettings.swift; sourceTree = SOURCE_ROOT; };
+		82EE46A81FE2C373006470F7 /* ArgConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArgConvertible.swift; path = Carthage/Checkouts/swiftline/Source/ArgConvertible.swift; sourceTree = SOURCE_ROOT; };
+		82EE46A91FE2C373006470F7 /* PromptReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromptReader.swift; path = Carthage/Checkouts/swiftline/Source/PromptReader.swift; sourceTree = SOURCE_ROOT; };
+		82EE46AA1FE2C373006470F7 /* StringBackgroundColorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringBackgroundColorizer.swift; path = Carthage/Checkouts/swiftline/Source/StringBackgroundColorizer.swift; sourceTree = SOURCE_ROOT; };
+		82EE46AB1FE2C373006470F7 /* Runner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Runner.swift; path = Carthage/Checkouts/swiftline/Source/Runner.swift; sourceTree = SOURCE_ROOT; };
+		82EE46AC1FE2C373006470F7 /* StringStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringStyle.swift; path = Carthage/Checkouts/swiftline/Source/StringStyle.swift; sourceTree = SOURCE_ROOT; };
+		82EE46AD1FE2C373006470F7 /* Argument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Argument.swift; path = Carthage/Checkouts/swiftline/Source/Argument.swift; sourceTree = SOURCE_ROOT; };
+		82EE46AE1FE2C373006470F7 /* Choose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Choose.swift; path = Carthage/Checkouts/swiftline/Source/Choose.swift; sourceTree = SOURCE_ROOT; };
+		82EE46AF1FE2C373006470F7 /* RunResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RunResults.swift; path = Carthage/Checkouts/swiftline/Source/RunResults.swift; sourceTree = SOURCE_ROOT; };
+		82EE46B01FE2C373006470F7 /* Glob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Glob.swift; path = Carthage/Checkouts/swiftline/Source/Glob.swift; sourceTree = SOURCE_ROOT; };
+		82EE46B11FE2C373006470F7 /* Args.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Args.swift; path = Carthage/Checkouts/swiftline/Source/Args.swift; sourceTree = SOURCE_ROOT; };
+		82EE46B21FE2C373006470F7 /* AgreeSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgreeSettings.swift; path = Carthage/Checkouts/swiftline/Source/AgreeSettings.swift; sourceTree = SOURCE_ROOT; };
+		82EE46B31FE2C373006470F7 /* Ask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ask.swift; path = Carthage/Checkouts/swiftline/Source/Ask.swift; sourceTree = SOURCE_ROOT; };
+		82EE46B41FE2C373006470F7 /* PromptPrinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromptPrinter.swift; path = Carthage/Checkouts/swiftline/Source/PromptPrinter.swift; sourceTree = SOURCE_ROOT; };
+		82EE46B51FE2C374006470F7 /* Colorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colorizer.swift; path = Carthage/Checkouts/swiftline/Source/Colorizer.swift; sourceTree = SOURCE_ROOT; };
+		82EE46B61FE2C374006470F7 /* ArgsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArgsParser.swift; path = Carthage/Checkouts/swiftline/Source/ArgsParser.swift; sourceTree = SOURCE_ROOT; };
+		82EE46B71FE2C374006470F7 /* RunnerSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RunnerSettings.swift; path = Carthage/Checkouts/swiftline/Source/RunnerSettings.swift; sourceTree = SOURCE_ROOT; };
+		82EE46B81FE2C374006470F7 /* ShortHandRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShortHandRunner.swift; path = Carthage/Checkouts/swiftline/Source/ShortHandRunner.swift; sourceTree = SOURCE_ROOT; };
+		82EE46B91FE2C374006470F7 /* AskerValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AskerValidator.swift; path = Carthage/Checkouts/swiftline/Source/AskerValidator.swift; sourceTree = SOURCE_ROOT; };
+		82EE46BA1FE2C374006470F7 /* Agree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Agree.swift; path = Carthage/Checkouts/swiftline/Source/Agree.swift; sourceTree = SOURCE_ROOT; };
+		82EE46BB1FE2C374006470F7 /* Env.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Env.swift; path = Carthage/Checkouts/swiftline/Source/Env.swift; sourceTree = SOURCE_ROOT; };
+		82EE46BC1FE2C374006470F7 /* PromptSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromptSettings.swift; path = Carthage/Checkouts/swiftline/Source/PromptSettings.swift; sourceTree = SOURCE_ROOT; };
+		82EE46BD1FE2C374006470F7 /* StringForegroundColorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringForegroundColorizer.swift; path = Carthage/Checkouts/swiftline/Source/StringForegroundColorizer.swift; sourceTree = SOURCE_ROOT; };
+		82EE46BE1FE2C374006470F7 /* ChooseSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseSettings.swift; path = Carthage/Checkouts/swiftline/Source/ChooseSettings.swift; sourceTree = SOURCE_ROOT; };
+		82EE46BF1FE2C374006470F7 /* CommandExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommandExecutor.swift; path = Carthage/Checkouts/swiftline/Source/CommandExecutor.swift; sourceTree = SOURCE_ROOT; };
+		82EE46C01FE2C374006470F7 /* StringStyleColorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringStyleColorizer.swift; path = Carthage/Checkouts/swiftline/Source/StringStyleColorizer.swift; sourceTree = SOURCE_ROOT; };
+		82EE46DD1FE2C5C4006470F7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		82EE46DF1FE2C5E4006470F7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		82EE46E11FE2C611006470F7 /* FileStyleguideVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStyleguideVars.swift; sourceTree = "<group>"; };
+		82EE46E31FE2CAB6006470F7 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82EE46921FE2BA47006470F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82EE468C1FE2BA47006470F7 = {
+			isa = PBXGroup;
+			children = (
+				82EE46971FE2BA47006470F7 /* SwiftStyleguideGenerator */,
+				82EE46961FE2BA47006470F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82EE46961FE2BA47006470F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82EE46951FE2BA47006470F7 /* SwiftStyleguideGenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82EE46971FE2BA47006470F7 /* SwiftStyleguideGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				82EE46981FE2BA47006470F7 /* main.swift */,
+				82EE46E11FE2C611006470F7 /* FileStyleguideVars.swift */,
+				82EE46DD1FE2C5C4006470F7 /* Colors.swift */,
+				82EE46DF1FE2C5E4006470F7 /* File.swift */,
+				82EE46E31FE2CAB6006470F7 /* Help.swift */,
+				82EE46A41FE2C365006470F7 /* Swiftline */,
+			);
+			path = SwiftStyleguideGenerator;
+			sourceTree = "<group>";
+		};
+		82EE46A41FE2C365006470F7 /* Swiftline */ = {
+			isa = PBXGroup;
+			children = (
+				82EE46BA1FE2C374006470F7 /* Agree.swift */,
+				82EE46B21FE2C373006470F7 /* AgreeSettings.swift */,
+				82EE46A81FE2C373006470F7 /* ArgConvertible.swift */,
+				82EE46B11FE2C373006470F7 /* Args.swift */,
+				82EE46B61FE2C374006470F7 /* ArgsParser.swift */,
+				82EE46AD1FE2C373006470F7 /* Argument.swift */,
+				82EE46B31FE2C373006470F7 /* Ask.swift */,
+				82EE46B91FE2C374006470F7 /* AskerValidator.swift */,
+				82EE46A71FE2C373006470F7 /* AskSettings.swift */,
+				82EE46AE1FE2C373006470F7 /* Choose.swift */,
+				82EE46BE1FE2C374006470F7 /* ChooseSettings.swift */,
+				82EE46B51FE2C374006470F7 /* Colorizer.swift */,
+				82EE46BF1FE2C374006470F7 /* CommandExecutor.swift */,
+				82EE46BB1FE2C374006470F7 /* Env.swift */,
+				82EE46B01FE2C373006470F7 /* Glob.swift */,
+				82EE46A61FE2C373006470F7 /* ProcessInfo.swift */,
+				82EE46B41FE2C373006470F7 /* PromptPrinter.swift */,
+				82EE46A91FE2C373006470F7 /* PromptReader.swift */,
+				82EE46BC1FE2C374006470F7 /* PromptSettings.swift */,
+				82EE46AB1FE2C373006470F7 /* Runner.swift */,
+				82EE46B71FE2C374006470F7 /* RunnerSettings.swift */,
+				82EE46AF1FE2C373006470F7 /* RunResults.swift */,
+				82EE46B81FE2C374006470F7 /* ShortHandRunner.swift */,
+				82EE46AA1FE2C373006470F7 /* StringBackgroundColorizer.swift */,
+				82EE46BD1FE2C374006470F7 /* StringForegroundColorizer.swift */,
+				82EE46AC1FE2C373006470F7 /* StringStyle.swift */,
+				82EE46C01FE2C374006470F7 /* StringStyleColorizer.swift */,
+				82EE46A51FE2C373006470F7 /* TaskPipe.swift */,
+			);
+			name = Swiftline;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82EE46941FE2BA47006470F7 /* SwiftStyleguideGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82EE469C1FE2BA47006470F7 /* Build configuration list for PBXNativeTarget "SwiftStyleguideGenerator" */;
+			buildPhases = (
+				82EE46911FE2BA47006470F7 /* Sources */,
+				82EE46921FE2BA47006470F7 /* Frameworks */,
+				82EE46931FE2BA47006470F7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftStyleguideGenerator;
+			productName = SwiftStyleguideGenerator;
+			productReference = 82EE46951FE2BA47006470F7 /* SwiftStyleguideGenerator */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82EE468D1FE2BA47006470F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = MarvelPrototyping;
+				TargetAttributes = {
+					82EE46941FE2BA47006470F7 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 82EE46901FE2BA47006470F7 /* Build configuration list for PBXProject "SwiftStyleguideGenerator" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 82EE468C1FE2BA47006470F7;
+			productRefGroup = 82EE46961FE2BA47006470F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82EE46941FE2BA47006470F7 /* SwiftStyleguideGenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82EE46911FE2BA47006470F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EE46C51FE2C375006470F7 /* PromptReader.swift in Sources */,
+				82EE46DE1FE2C5C4006470F7 /* Colors.swift in Sources */,
+				82EE46C71FE2C375006470F7 /* Runner.swift in Sources */,
+				82EE46CE1FE2C375006470F7 /* AgreeSettings.swift in Sources */,
+				82EE46D91FE2C375006470F7 /* StringForegroundColorizer.swift in Sources */,
+				82EE46E41FE2CAB6006470F7 /* Help.swift in Sources */,
+				82EE46DC1FE2C375006470F7 /* StringStyleColorizer.swift in Sources */,
+				82EE46D81FE2C375006470F7 /* PromptSettings.swift in Sources */,
+				82EE46CF1FE2C375006470F7 /* Ask.swift in Sources */,
+				82EE46E01FE2C5E4006470F7 /* File.swift in Sources */,
+				82EE46DB1FE2C375006470F7 /* CommandExecutor.swift in Sources */,
+				82EE46D01FE2C375006470F7 /* PromptPrinter.swift in Sources */,
+				82EE46D11FE2C375006470F7 /* Colorizer.swift in Sources */,
+				82EE46D31FE2C375006470F7 /* RunnerSettings.swift in Sources */,
+				82EE46DA1FE2C375006470F7 /* ChooseSettings.swift in Sources */,
+				82EE46E21FE2C611006470F7 /* FileStyleguideVars.swift in Sources */,
+				82EE46D41FE2C375006470F7 /* ShortHandRunner.swift in Sources */,
+				82EE46C31FE2C375006470F7 /* AskSettings.swift in Sources */,
+				82EE46D51FE2C375006470F7 /* AskerValidator.swift in Sources */,
+				82EE46C11FE2C375006470F7 /* TaskPipe.swift in Sources */,
+				82EE46C61FE2C375006470F7 /* StringBackgroundColorizer.swift in Sources */,
+				82EE46CC1FE2C375006470F7 /* Glob.swift in Sources */,
+				82EE46CA1FE2C375006470F7 /* Choose.swift in Sources */,
+				82EE46D61FE2C375006470F7 /* Agree.swift in Sources */,
+				82EE46CB1FE2C375006470F7 /* RunResults.swift in Sources */,
+				82EE46CD1FE2C375006470F7 /* Args.swift in Sources */,
+				82EE46C81FE2C375006470F7 /* StringStyle.swift in Sources */,
+				82EE46C41FE2C375006470F7 /* ArgConvertible.swift in Sources */,
+				82EE46C21FE2C375006470F7 /* ProcessInfo.swift in Sources */,
+				82EE46C91FE2C375006470F7 /* Argument.swift in Sources */,
+				82EE46D71FE2C375006470F7 /* Env.swift in Sources */,
+				82EE46991FE2BA47006470F7 /* main.swift in Sources */,
+				82EE46D21FE2C375006470F7 /* ArgsParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		82EE469A1FE2BA47006470F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82EE469B1FE2BA47006470F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		82EE469D1FE2BA47006470F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C95EP5VB7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftStyleguideGenerator",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		82EE469E1FE2BA47006470F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C95EP5VB7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftStyleguideGenerator",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82EE46901FE2BA47006470F7 /* Build configuration list for PBXProject "SwiftStyleguideGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EE469A1FE2BA47006470F7 /* Debug */,
+				82EE469B1FE2BA47006470F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82EE469C1FE2BA47006470F7 /* Build configuration list for PBXNativeTarget "SwiftStyleguideGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EE469D1FE2BA47006470F7 /* Debug */,
+				82EE469E1FE2BA47006470F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82EE468D1FE2BA47006470F7 /* Project object */;
+}
