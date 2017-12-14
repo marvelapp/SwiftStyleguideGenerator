@@ -9,4 +9,4 @@ Install dependencies by running **Install.sh**
 
 ### Build Phases
 Use the executable in a Run Script in your Build Phases to keep your styleguide up to date.
-Eg: ./SwiftStyleguideGenerator [THEME_JSON_PATH] [DESTINATION_FOLDER] --platform iOS
+```./SwiftStyleguideGenerator [THEME_JSON_PATH] [DESTINATION_FOLDER] --platform iOS```
