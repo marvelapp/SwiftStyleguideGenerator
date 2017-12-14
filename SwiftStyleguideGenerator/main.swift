@@ -35,12 +35,21 @@ if destinationDirectory.last != "/" {
     destinationDirectory.append("/")
 }
 
-print("🎨  Starting generating Styleguide files...".f.Green)
+print("🔮  Starting generating your Styleguide...".f.Green)
 
 let json = FileStyleguideVars.read(path: fileStyleguideVarsPath)
+
+print("🎨  Generating color file...".f.Green)
 Colors().generate(json: json, destinationDirectory: destinationDirectory, platform: platform)
+
+print("⚪️  Generating radius file...".f.Green)
 Radiuses().generate(json: json, destinationDirectory: destinationDirectory)
+
+print("🖌  Generating font sizes file...".f.Green)
 FontSizes().generate(json: json, destinationDirectory: destinationDirectory)
 
-print("✌️   Finished generating Styleguide files.".f.Green)
+print("📦  Generating styleguide file...".f.Green)
+Styleguide().generate(destinationDirectory: destinationDirectory)
+
+print("✌️   Finished generating your styleguide.".f.Green)
 
