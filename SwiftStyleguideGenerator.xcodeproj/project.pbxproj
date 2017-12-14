@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8265EEB51FE2E2EC00FF18A9 /* Radiuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8265EEB41FE2E2EC00FF18A9 /* Radiuses.swift */; };
 		82EE46991FE2BA47006470F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46981FE2BA47006470F7 /* main.swift */; };
 		82EE46C11FE2C375006470F7 /* TaskPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46A51FE2C373006470F7 /* TaskPipe.swift */; };
 		82EE46C21FE2C375006470F7 /* ProcessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE46A61FE2C373006470F7 /* ProcessInfo.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8265EEB41FE2E2EC00FF18A9 /* Radiuses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radiuses.swift; sourceTree = "<group>"; };
 		82EE46951FE2BA47006470F7 /* SwiftStyleguideGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftStyleguideGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EE46981FE2BA47006470F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		82EE46A51FE2C373006470F7 /* TaskPipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskPipe.swift; path = Carthage/Checkouts/swiftline/Source/TaskPipe.swift; sourceTree = SOURCE_ROOT; };
@@ -124,6 +126,7 @@
 				82EE46981FE2BA47006470F7 /* main.swift */,
 				82EE46E11FE2C611006470F7 /* FileStyleguideVars.swift */,
 				82EE46DD1FE2C5C4006470F7 /* Colors.swift */,
+				8265EEB41FE2E2EC00FF18A9 /* Radiuses.swift */,
 				82EE46DF1FE2C5E4006470F7 /* File.swift */,
 				82EE46E31FE2CAB6006470F7 /* Help.swift */,
 				82EE46A41FE2C365006470F7 /* Swiftline */,
@@ -268,6 +271,7 @@
 				82EE46CB1FE2C375006470F7 /* RunResults.swift in Sources */,
 				82EE46CD1FE2C375006470F7 /* Args.swift in Sources */,
 				82EE46C81FE2C375006470F7 /* StringStyle.swift in Sources */,
+				8265EEB51FE2E2EC00FF18A9 /* Radiuses.swift in Sources */,
 				82EE46C41FE2C375006470F7 /* ArgConvertible.swift in Sources */,
 				82EE46C21FE2C375006470F7 /* ProcessInfo.swift in Sources */,
 				82EE46C91FE2C375006470F7 /* Argument.swift in Sources */,
