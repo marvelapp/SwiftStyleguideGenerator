@@ -14,7 +14,7 @@ class FontSizes {
     
     func generate(json: [String: Any], destinationDirectory: String){
         
-        guard let fontSizes = json["fontSizes"] as? [String: String] else {
+        guard let fontSizes = json["fontSizes"] as? [Double] else {
             print("❌ No fontSizes found in JSON.".f.Red)
             exit(1)
         }

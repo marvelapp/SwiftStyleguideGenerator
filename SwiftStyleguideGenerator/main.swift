@@ -45,7 +45,7 @@ Colors().generate(json: json, destinationDirectory: destinationDirectory, platfo
 print("⚪️  Generating radius file...".f.Green)
 Radiuses().generate(json: json, destinationDirectory: destinationDirectory)
 
-print("🖌  Generating font sizes file...".f.Green)
+print("🖌   Generating font sizes file...".f.Green)
 FontSizes().generate(json: json, destinationDirectory: destinationDirectory)
 
 print("📦  Generating styleguide file...".f.Green)

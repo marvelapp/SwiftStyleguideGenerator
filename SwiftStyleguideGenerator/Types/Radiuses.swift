@@ -14,7 +14,7 @@ class Radiuses {
     
     func generate(json: [String: Any], destinationDirectory: String){
         
-        guard let radii = json["radii"] as? [String: String] else {
+        guard let radii = json["radii"] as? [Double] else {
             print("❌ No radiuses found in JSON.".f.Red)
             exit(1)
         }
