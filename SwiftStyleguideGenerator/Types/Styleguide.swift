@@ -15,9 +15,9 @@ class Styleguide {
     func generate(destinationDirectory: String){
         
         var styleguide = "class Styleguide: NSObject {\n\n"
-        styleguide += "@objc static let colors = Color.self"
-        styleguide += "@objc static let cornerRadiuses = CornerRadius.self"
-        styleguide += "@objc static let fontSizes = FontSizes.self"
+        styleguide += "@objc static let colors = Color.self\n"
+        styleguide += "@objc static let cornerRadiuses = CornerRadius.self\n"
+        styleguide += "@objc static let fontSizes = FontSizes.self\n"
         styleguide += "\n\n}"
         
         File.write(string: styleguide, filePath: "\(destinationDirectory)\(fileName)")
