@@ -15,6 +15,13 @@ Install dependencies by running **Install.sh**
 - Font Sizes
 - Fonts
 
+### How to install
+1. Store your theme.json in a git repository
+2. Add the theme repo as git submodule to your Swift project.
+3. Store the SwiftStyleguideGenerator executable in your project.
+4. Add a script build phase to your project settings in Xcode (see below).
+5. Add the files the SwiftStyleguideGenerator added in the destination folder to your project.
+
 ### Build Phases
 Use the executable in a Run Script in your Build Phases to keep your styleguide up to date.
 
