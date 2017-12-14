@@ -1,5 +1,5 @@
 # Swift Styleguide Generator
-<img src="https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20watchOS%20%7C%20tvOS-FFC82C.svg" style="max-height: 300px;" alt="Platform: iOS | macOS | watchOS | tvOS"><a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat" style="max-height: 300px;" alt="Swift"/></a><a href="http://twitter.com/marvelapp"><img src="https://img.shields.io/badge/Twitter-@marvelapp-blue.svg?style=flat" style="max-height: 300px;" alt="Marvel App"/></a>
+<img src="https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20watchOS%20%7C%20tvOS-FFC82C.svg" style="max-height: 300px;" alt="Platform: iOS | macOS | watchOS | tvOS"><a href="https://developer.apple.com/swift/"> <img src="https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat" style="max-height: 300px;" alt="Swift"/></a> <a href="http://twitter.com/marvelapp"><img src="https://img.shields.io/badge/Twitter-@marvelapp-blue.svg?style=flat" style="max-height: 300px;" alt="Marvel App"/></a>
 
 Executable for generating a Swift styleguide from a JSON file. The theme config works nicely with libraries like [styled-system](https://github.com/jxnblk/styled-system) and apps like [Compositor Lab](compositor.io/lab).
 
