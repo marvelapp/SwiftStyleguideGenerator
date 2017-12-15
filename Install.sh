@@ -11,7 +11,7 @@ if [ -z ${INSTALL_DIR+x} ]; then
   INSTALL_DIR=/usr/local/bin
 fi
 if [ -z ${INSTALL_PATH+x} ]; then
-  INSTALL_PATH="${INSTALL_DIR}/swiftstyleguidegenerator"
+  INSTALL_PATH="${INSTALL_DIR}/SwiftStyleguideGenerator"
 fi
 
 DOWNLOAD_URL_LOOKUP="DOWNLOAD_${PLATFORM}_${ARCH}"
