@@ -18,7 +18,7 @@ Executable for generating a Swift styleguide from a JSON file. The theme config 
 Install it with this command inside your terminal:
 
 ```
-curl -sL https://goo.gl/18odZh | bash
+curl -sL https://goo.gl/kRSc5w | bash
 ```
 
 ### Step 2: Create a theme.json
