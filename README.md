@@ -22,9 +22,9 @@ curl -sL https://raw.githubusercontent.com/marvelapp/SwiftStyleguideGenerator/ma
 Create your theme.json and fonts directory.
 
 **In a format like:**
-theme.json
-fonts/my-font.ttf
-fonts/my-bold-font.ttf
+- theme.json
+- fonts/my-font.ttf
+- fonts/my-bold-font.ttf
 
 See [here](SwiftStyleguideGenerator/Tests/Example) for an example.
 
