@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import Cocoa
 
 class Colors {
     
     let fileName = "Colors.swift"
     
-    func generate(json: [String: Any], destinationDirectory: String, platform: Platform){
+    func generate(json: [String: Any], destinationDirectory: String){
         
         guard let colors = json["colors"] as? [String: String] else {
             print("❌ No colors found in JSON.".f.Red)
@@ -20,23 +21,25 @@ class Colors {
         }
         
         var fileString = "class Color: NSObject {\n\n"
-        
-        var colorClass = "UIColor"
-        switch platform {
-        case .iOS:
-            colorClass = "UIColor"
-        case .watchOS:
-            colorClass = "UIColor"
-        case .tvOS:
-            colorClass = "UIColor"
-        case .macOS:
-            colorClass = "NSColor"
-        }
-        
+
+        fileString += "#if os(OSX)\n\n"
+
         for (key, value) in colors {
-            fileString += "@objc static let \(key) = \(colorClass)(hex: \"\(value)\")\n"
+            let valueColor = NSColor.hex(string: value)
+            fileString += "// \(value)\n"
+            fileString += "@objc static let \(key) = NSColor(red: \(valueColor.redComponent), green: \(valueColor.greenComponent), blue: \(valueColor.blueComponent), alpha: 1)\n\n"
         }
-        
+
+        fileString += "\n#else\n\n"
+
+        for (key, value) in colors {
+            let valueColor = NSColor.hex(string: value)
+            fileString += "// #\(value)\n"
+            fileString += "@objc static let \(key) = UIColor(red: \(valueColor.redComponent), green: \(valueColor.greenComponent), blue: \(valueColor.blueComponent), alpha: 1)\n\n"
+        }
+
+        fileString += "\n#endif"
+
         fileString += "\n\n}"
         
         File.write(string: fileString, filePath: "\(destinationDirectory)\(fileName)")

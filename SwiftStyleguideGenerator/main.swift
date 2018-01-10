@@ -8,25 +8,6 @@
 
 import Foundation
 
-enum Platform: String {
-    case macOS = "macOS"
-    case iOS = "iOS"
-    case watchOS = "watchOS"
-    case tvOS = "tvOS"
-}
-
-guard let platformValue = Args.parsed.flags["platform"] else {
-    print("❌ Provide a platform.".f.Red)
-    print(Help.command.f.Red)
-    exit(1)
-}
-
-guard let platform = Platform(rawValue: platformValue)else {
-    print("❌ Provide a valid platform.".f.Red)
-    print(Help.command.f.Red)
-    exit(1)
-}
-
 let fileStyleguideVarsPath = Args.parsed.parameters[0]
 var destinationDirectory = Args.parsed.parameters[1]
 
@@ -37,16 +18,23 @@ if destinationDirectory.last != "/" {
 
 print("🔮  Starting generating your Styleguide...".f.Green)
 
+print("📁  Creating Styleguide destination folder...".f.Green)
+File.createDir(directoryPath: destinationDirectory)
+
 let json = FileStyleguideVars.read(path: fileStyleguideVarsPath)
 
 print("🎨  Generating color file...".f.Green)
-Colors().generate(json: json, destinationDirectory: destinationDirectory, platform: platform)
+Colors().generate(json: json, destinationDirectory: destinationDirectory)
 
 print("⚪️  Generating radius file...".f.Green)
 Radiuses().generate(json: json, destinationDirectory: destinationDirectory)
 
 print("🖌   Generating font sizes file...".f.Green)
 FontSizes().generate(json: json, destinationDirectory: destinationDirectory)
+
+print("📦  Generating fonts file...".f.Green)
+let varsUrls = URL(fileURLWithPath: fileStyleguideVarsPath)
+Fonts().generate(fontsDirectory: "\(varsUrls.deletingLastPathComponent().path)/fonts", destinationDirectory: destinationDirectory)
 
 print("📦  Generating styleguide file...".f.Green)
 Styleguide().generate(destinationDirectory: destinationDirectory)

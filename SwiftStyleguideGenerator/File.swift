@@ -22,5 +22,36 @@ struct File {
         }
         
     }
+
+    static func createDir(directoryPath: String){
+
+        let fileManager = FileManager.default
+        var isDir : ObjCBool = false
+
+        // Check if directory exists
+
+        if fileManager.fileExists(atPath: directoryPath, isDirectory:&isDir) {
+
+            // Check if existing path is directory
+
+            if isDir.boolValue == false {
+                print("❌ There is file already with name Styleguide in your destination folder. Therefore we can't create the Styleguide folder there..".f.Red)
+                exit(1)
+            }
+
+        } else {
+
+            // Create directory
+            do {
+                try fileManager.createDirectory(atPath: directoryPath, withIntermediateDirectories: false, attributes: nil)
+            } catch let error as NSError {
+                print(error.localizedDescription);
+                print("❌ \(error.localizedDescription)".f.Red)
+                exit(1)
+            }
+
+        }
+
+    }
     
 }

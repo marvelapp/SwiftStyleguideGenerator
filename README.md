@@ -18,9 +18,19 @@ curl -sL https://raw.githubusercontent.com/marvelapp/SwiftStyleguideGenerator/ma
 ```
 
 ### Step 2: Create a theme.json
-Store your theme.json somewhere.
+
+Create your theme.json and fonts directory.
+
+**In a format like:**
+theme.json
+fonts/my-font.ttf
+fonts/my-bold-font.ttf
+
+See [here](SwiftStyleguideGenerator/Tests/Example) for an example.
+
+Store them somewhere...
 This could be on Github so you can always fetch the latest theme file using git submodules.
-Or if you prefer it to be a static file, you can store it inside your project repo.
+Or if you prefer it to be a static files, you can store it inside your project repo.
 
 ### Step 3: Build Phases
 Use the executable in a Run Script in your Build Phases to keep your styleguide up to date.
