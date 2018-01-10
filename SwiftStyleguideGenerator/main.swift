@@ -8,8 +8,15 @@
 
 import Foundation
 
-let fileStyleguideVarsPath = Args.parsed.parameters[0]
-var destinationDirectory = Args.parsed.parameters[1]
+guard let fileStyleguideVarsPath = Args.parsed.parameters[safe: 0] else {
+    print("❌ No theme.json defined.".f.Red)
+    exit(1)
+}
+
+guard var destinationDirectory = Args.parsed.parameters[safe: 1] else {
+    print("❌ No destination folder defined.".f.Red)
+    exit(1)
+}
 
 // Make sure path has a last slash
 if destinationDirectory.last != "/" {
