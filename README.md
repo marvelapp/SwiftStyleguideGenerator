@@ -36,7 +36,7 @@ Or if you prefer it to be a static files, you can store it inside your project r
 Use the executable in a Run Script in your Build Phases to keep your styleguide up to date.
 
 ```
-SwiftStyleguideGenerator [THEME_JSON_PATH] [DESTINATION_FOLDER] --platform iOS
+SwiftStyleguideGenerator [THEME_JSON_PATH] [DESTINATION_FOLDER]
 ```
 
 ### Step 4: Run your project once
@@ -48,6 +48,13 @@ You are now ready to use the styleguide. By using:
 - Styleguide.colors.tomato or [Styleguide.colors tomato];
 - Styleguide.fontSizes.size1 or [Styleguide.fontSizes size1];
 - Styleguide.radiuses.size2 or [Styleguide.radiuses size2];
+
+### Extra
+You can also define a fonts folder manually if you want to target fonts already added to your project.
+
+```
+SwiftStyleguideGenerator [THEME_JSON_PATH] [DESTINATION_FOLDER] --fontsDirectory [FONTS_FOLDER]
+```
 
 ### Compiling yourself
 

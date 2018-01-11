@@ -40,8 +40,13 @@ print("🖌   Generating font sizes file...".f.Green)
 FontSizes().generate(json: json, destinationDirectory: destinationDirectory)
 
 print("📦  Generating fonts file...".f.Green)
-let varsUrls = URL(fileURLWithPath: fileStyleguideVarsPath)
-Fonts().generate(fontsDirectory: "\(varsUrls.deletingLastPathComponent().path)/fonts", destinationDirectory: destinationDirectory)
+
+if let fontsDirectory = Args.parsed.flags["fontsDirectory"]{
+    Fonts().generate(fontsDirectory: fontsDirectory, destinationDirectory: destinationDirectory)
+} else {
+    let varsUrls = URL(fileURLWithPath: fileStyleguideVarsPath)
+    Fonts().generate(fontsDirectory: "\(varsUrls.deletingLastPathComponent().path)/fonts", destinationDirectory: destinationDirectory)
+}
 
 print("📦  Generating styleguide file...".f.Green)
 Styleguide().generate(destinationDirectory: destinationDirectory)

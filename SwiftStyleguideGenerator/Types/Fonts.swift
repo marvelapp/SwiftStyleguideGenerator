@@ -32,11 +32,13 @@ class Fonts {
                 return
             }
 
-            guard let fontSwiftName = loadFontName(for: relativeURL) else {
+            guard let operatingSystemName = loadFontName(for: relativeURL) else {
                 return
             }
 
-            finalFileString += "@objc static let \(relativeURL.deletingPathExtension().lastPathComponent) = \"\(fontSwiftName)\"\n"
+            let cleanFontSwiftName = removeSpecialCharsFromString(text: relativeURL.deletingPathExtension().lastPathComponent)
+
+            finalFileString += "@objc static let \(cleanFontSwiftName.lowercasingFirstLetter()) = \"\(operatingSystemName)\"\n"
 
         })
 
@@ -64,6 +66,12 @@ class Fonts {
 
         return name as String
 
+    }
+
+    func removeSpecialCharsFromString(text: String) -> String {
+        let okayChars : Set<Character> =
+            Set("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLKMNOPQRSTUVWXYZ1234567890")
+        return String(text.filter {okayChars.contains($0) })
     }
 
 }
