@@ -34,6 +34,7 @@ Or if you prefer it to be a static files, you can store it inside your project r
 
 ### Step 3: Build Phases
 Use the executable in a Run Script in your Build Phases to keep your styleguide up to date.
+Put it before the "Compile Sources" phase.
 
 ```
 SwiftStyleguideGenerator [THEME_JSON_PATH] [DESTINATION_FOLDER]
