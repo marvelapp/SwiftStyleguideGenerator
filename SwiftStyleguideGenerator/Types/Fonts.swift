@@ -14,7 +14,7 @@ class Fonts {
 
     func generate(fontsDirectory: String, destinationDirectory: String){
 
-        var finalFileString = "class FontSizes: NSObject {\n\n"
+        var finalFileString = "class Fonts: NSObject {\n\n"
 
         let fileManager = FileManager.default
         let baseUrl: URL = URL(fileURLWithPath: fontsDirectory)

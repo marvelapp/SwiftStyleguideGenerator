@@ -16,7 +16,7 @@ class Styleguide {
         
         var styleguide = "class Styleguide: NSObject {\n\n"
         styleguide += "@objc static let colors = Color.self\n"
-        styleguide += "@objc static let cornerRadiuses = CornerRadius.self\n"
+        styleguide += "@objc static let radiuses = Radius.self\n"
         styleguide += "@objc static let fontSizes = FontSizes.self\n"
         styleguide += "@objc static let fonts = Fonts.self\n"
         styleguide += "\n\n}"
