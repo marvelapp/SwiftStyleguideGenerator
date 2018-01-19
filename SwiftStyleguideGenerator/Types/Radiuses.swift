@@ -19,11 +19,11 @@ class Radiuses {
             exit(1)
         }
         
-        var fileString = "class Radius: NSObject {\n\n"
+        var fileString = "public class Radius: NSObject {\n\n"
         var sizeName = 1
         
         for value in radii {
-            fileString += "@objc static let size\(sizeName):CGFloat = \(value)\n"
+            fileString += "@objc public static let size\(sizeName):CGFloat = \(value)\n"
             sizeName = sizeName + 1
         }
         

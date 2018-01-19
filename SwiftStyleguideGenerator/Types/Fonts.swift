@@ -14,7 +14,7 @@ class Fonts {
 
     func generate(fontsDirectory: String, destinationDirectory: String){
 
-        var finalFileString = "class Fonts: NSObject {\n\n"
+        var finalFileString = "public class Fonts: NSObject {\n\n"
 
         let fileManager = FileManager.default
         let baseUrl: URL = URL(fileURLWithPath: fontsDirectory)
@@ -38,7 +38,7 @@ class Fonts {
 
             let cleanFontSwiftName = removeSpecialCharsFromString(text: relativeURL.deletingPathExtension().lastPathComponent)
 
-            finalFileString += "@objc static let \(cleanFontSwiftName.lowercasingFirstLetter()) = \"\(operatingSystemName)\"\n"
+            finalFileString += "@objc public static let \(cleanFontSwiftName.lowercasingFirstLetter()) = \"\(operatingSystemName)\"\n"
 
         })
 

@@ -20,14 +20,14 @@ class Colors {
             exit(1)
         }
         
-        var fileString = "class Color: NSObject {\n\n"
+        var fileString = "public class Color: NSObject {\n\n"
 
         fileString += "#if os(OSX)\n\n"
 
         for (key, value) in colors {
             let valueColor = NSColor.hex(string: value)
             fileString += "// \(value)\n"
-            fileString += "@objc static let \(key) = NSColor(red: \(valueColor.redComponent), green: \(valueColor.greenComponent), blue: \(valueColor.blueComponent), alpha: 1)\n\n"
+            fileString += "@objc public static let \(key) = NSColor(red: \(valueColor.redComponent), green: \(valueColor.greenComponent), blue: \(valueColor.blueComponent), alpha: 1)\n\n"
         }
 
         fileString += "\n#else\n\n"
@@ -35,7 +35,7 @@ class Colors {
         for (key, value) in colors {
             let valueColor = NSColor.hex(string: value)
             fileString += "// #\(value)\n"
-            fileString += "@objc static let \(key) = UIColor(red: \(valueColor.redComponent), green: \(valueColor.greenComponent), blue: \(valueColor.blueComponent), alpha: 1)\n\n"
+            fileString += "@objc public static let \(key) = UIColor(red: \(valueColor.redComponent), green: \(valueColor.greenComponent), blue: \(valueColor.blueComponent), alpha: 1)\n\n"
         }
 
         fileString += "\n#endif"
