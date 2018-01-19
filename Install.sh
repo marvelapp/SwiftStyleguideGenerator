@@ -1,8 +1,8 @@
 #!/bin/bash
 set -eu
 
-DOWNLOAD_Darwin_x86_64="https://github.com/marvelapp/SwiftStyleguideGenerator/releases/download/0.2/SwiftStyleguideGenerator"
-VERSION="0.1"
+DOWNLOAD_Darwin_x86_64="https://github.com/marvelapp/SwiftStyleguideGenerator/releases/download/0.3/SwiftStyleguideGenerator"
+VERSION="0.3"
 PLATFORM=`uname -s`
 ARCH=`uname -m`
 
