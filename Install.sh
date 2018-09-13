@@ -17,7 +17,7 @@ fi
 DOWNLOAD_URL_LOOKUP="DOWNLOAD_${PLATFORM}_${ARCH}"
 DOWNLOAD_URL="${!DOWNLOAD_URL_LOOKUP}"
 
-echo "This script will automatically install sentry-cli ${VERSION} for you."
+echo "This script will automatically install SwiftStyleguideGenerator ${VERSION} for you."
 echo "Installation path: ${INSTALL_PATH}"
 if [ "x$(id -u)" == "x0" ]; then
   echo "Warning: this script is currently running as root. This is dangerous. "
